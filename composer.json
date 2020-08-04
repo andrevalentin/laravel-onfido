@@ -11,12 +11,10 @@
         }
     ],
     "require": {
-        "onfido/api-php-client": "^5.0.2",
-        "illuminate/support": "~7.22"
+        "onfido/api-php-client": "^5.0.2"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.2",
-        "graham-campbell/testbench": "^5.5"
+        "orchestra/testbench": "3.8.6"
     },
     "autoload": {
         "psr-4": {
