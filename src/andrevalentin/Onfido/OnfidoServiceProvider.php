@@ -50,16 +50,16 @@ class OnfidoServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $source = dirname(__DIR__, 2) . '/config/onfido.php';
+        $config = __DIR__ . '/../../config/onfido.php';
 
-        if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
+        if ($this->app instanceof \Illuminate\Foundation\Application && $this->app->runningInConsole()) {
             $this->publishes([
-                $source => config_path('onfido.php'),
-            ], 'config');
-        } elseif ($this->app instanceof LumenApplication) {
+                $config => config_path('onfido.php'),
+            ],'config');
+        } elseif ($this->app instanceof \Illuminate\Foundation\Application === false) {
             $this->app->configure('onfido');
         }
 
-        $this->mergeConfigFrom($source, 'onfido');
+        $this->mergeConfigFrom($config, 'onfido');
     }
 }
