@@ -55,7 +55,7 @@ class OnfidoServiceProvider extends ServiceProvider
         if ($this->app instanceof \Illuminate\Foundation\Application && $this->app->runningInConsole()) {
             $this->publishes([
                 $config => config_path('onfido.php'),
-            ],'config');
+            ], 'config');
         } elseif ($this->app instanceof \Illuminate\Foundation\Application === false) {
             $this->app->configure('onfido');
         }
