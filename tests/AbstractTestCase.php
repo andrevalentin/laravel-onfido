@@ -1,9 +1,9 @@
 <?php
 
-namespace andrevalentin\Onfido\Tests;
+namespace AndreValentin\Onfido\Tests;
 
 use GrahamCampbell\TestBench\AbstractPackageTestCase;
-use andrevalentin\Onfido\OnfidoServiceProvider;
+use AndreValentin\Onfido\OnfidoServiceProvider;
 
 /**
  * This is the abstract class.
