@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "onfido/api-php-client": "^5.1",
+        "onfido/api-php-client": "^5.2",
         "illuminate/support": "^8.0"
     },
     "require-dev": {
