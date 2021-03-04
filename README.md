@@ -13,14 +13,14 @@ In app.php in your Laravel application add the Service Provider under the provid
 ```
 'providers' => [
     ...,
-    andrevalentin\Onfido\OnfidoServiceProvider::class,
+    AndreValentin\Onfido\OnfidoServiceProvider::class,
 ],
 ```
 Also add the Class Alias under the aliases array:
 ```
 'aliases' => [
     ...,
-    'Onfido'    => andrevalentin\Onfido\Facades\Onfido::class,
+    'Onfido'    => AndreValentin\Onfido\Facades\Onfido::class,
 ],
 ```
 Add a onfido.php config file in your config directory with the following content:
