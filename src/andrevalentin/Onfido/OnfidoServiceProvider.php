@@ -1,6 +1,6 @@
 <?php
 
-namespace andrevalentin\Onfido;
+namespace AndreValentin\Onfido;
 
 use Illuminate\Support\ServiceProvider;
 use Onfido\Api\DefaultApi;
