@@ -25,7 +25,7 @@ class OnfidoServiceProvider extends ServiceProvider
         $config = new Configuration();
         $config->setApiKey('Authorization', 'token=' . config('onfido.api_key'));
         $config->setApiKeyPrefix('Authorization', 'Token');
-        $config->setHost($config->getHostFromSettings(1, array("region" => config('onfido.region','eu') )));
+        $config->setHost($config->getHostFromSettings(1, array("region" => config('onfido.region','us') )));
 
         $this->app->singleton('onfido', function ($app) use ($config) {
             return new DefaultApi(null, $config);
